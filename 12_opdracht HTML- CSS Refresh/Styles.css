@@ -1,0 +1,75 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    height: 300px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 100px 100px 70px;
+    grid-template-areas: 
+    " n n n n n n n n i i "
+    " m m m m m m m m m m "
+    " a a a a a d d d d d ";
+    margin: 150px;
+    padding: 40px;
+    padding-bottom: 10px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    
+}
+
+.names{
+    margin: 1px;
+}
+
+.member{
+    margin: 1px;
+    color: gray;
+    font-size: larger;
+
+}
+
+.name{
+grid-area: n;
+
+}
+.icon {
+    grid-area: i;
+
+}
+
+
+
+.message {
+    grid-area: m;
+    font-size: larger;
+
+}
+
+.Approve {
+    grid-area: a;
+    border: solid 3px rgb(37, 211, 66);
+    color: rgb(37, 211, 66);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.Decline {
+    grid-area: d;
+    border: solid 3px rgb(211, 37, 37);
+color: rgb(211, 37, 37);
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+padding-top: 16px;
+
+    border-radius: 0px 10px 10px 0px;
+
+
+
+}
